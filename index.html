@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        fetch("http://localhost:3000/tasks")
+        .then(response =>{
+            response.json().then(task =>{
+            console.log(task)
+            })
+        })
+    </script>
+    
+        <h1>To-do </h1>
+        <div>
+            <input type="text" id="firstName" placeholder="Nome">
+            <input type="text" id="lastName" placeholder="Sobrenome">
+            <button type="button"></button>
+        </div>
+    <script>
+        const firstName = document.getElementById("firstName");
+        const lastName = document.getElementById("lastName");
+    </script>
+</body>
+</html>
