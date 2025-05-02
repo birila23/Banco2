@@ -1,5 +1,6 @@
 import sequelize from "../database/sequelize.js";
 import { DataTypes } from "sequelize";
+import User from './user.js'
 
 const Task = sequelize.define(
     'Task',
@@ -34,6 +35,14 @@ const Task = sequelize.define(
       // Other model options go here
     },
   );
-  Task.sync();
+/* 
+  User.hasMany(Task, {
+    foreignKey: 'userId', 
+    allowNull: false,
+    onDelete: 'CASCADE',
+    onUpdate: 'CASCADE'
+  }); */
+
+  Task.sync({ force: true});
 
   export default Task;
