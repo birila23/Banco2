@@ -1,0 +1,48 @@
+.background{
+    background: linear-gradient(rgb(182, 149, 235), rgb(180, 102, 183));
+    min-height: 100vh;
+    width: 100%;
+    padding: 10px;
+}
+
+.caixaTexto {
+    flex: 1;
+    outline: none;
+    border: none;
+    background: transparent;
+    padding: 13px;
+    font-size: 16px;
+}
+
+#btSalvar {
+    border: none;
+    outline: none;
+    padding: 12px 30px;
+    background: #7eda54;
+    color: rgb(59, 21, 21);
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px;
+    width: auto;
+}
+
+.conteudo {
+    background: #ffffff;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+.input_texto input,
+.input_texto select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+    background-color: #f9f9f9;
+}
